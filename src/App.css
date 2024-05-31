@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+
+
+
+
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Noto Sans', sans-serif;
+
+}
+.weather{
+  width:100%;
+  height: 100vh;
+  /* background-color: #171318; */
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  font-size: 20px;
+background-size: cover;
+
+}
+.main{
+  width:50vw;
+  height: 60vh;
+  background-color: #17131858;
+  color: #d1c4e9;
+  border-radius: 20px;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.left,.right{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+ flex-direction: column;
+ gap: 10px;
+ padding: 15px;
+ 
+ & img{
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+ }
+}
+.temp{display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+gap: 15px;}
+input{
+  width: 80%;
+  height: 40px;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  border: none;
+  background-color: #E0CA3C;
+
+text-indent: 16px;  font-size: 20px;
+}
+.search{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+button{
+  width: 20%;
+  height: 40px;
+  border-radius:  0 20px 20px 0;
+  border: none;
+  background-color:#E0CA3C;
+  cursor: pointer;
+  color: #171318;
+  font-weight: 700;
+}
+input::placeholder{
+  color: #171318;
+}
